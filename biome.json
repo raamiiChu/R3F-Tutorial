@@ -3,7 +3,8 @@
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
   },
   "files": {
     "ignoreUnknown": true,
@@ -20,6 +21,16 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "fix": "safe",
+          "options": {
+            "attributes": ["className"],
+            "functions": ["cn", "cva", "clsx", "tw", "tw.*"]
+          }
+        }
       }
     },
     "domains": {
