@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${notoSans.variable} ${notoSans.className} mx-auto antialiased`}
+        className={`${notoSans.variable} ${notoSans.className} mx-auto overflow-x-hidden antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -35,7 +35,7 @@ export default function RootLayout({
         >
           <SidebarProvider>
             <AppSidebar />
-            <main className="relative w-full">
+            <main className="relative w-full pb-8">
               <SidebarTrigger className="sticky top-0 z-50 border-2 border-accent bg-background md:border-0" />
               <article className="container mx-auto px-4 md:px-12 lg:px-24 xl:px-40 2xl:px-64">
                 {children}

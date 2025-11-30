@@ -22,7 +22,7 @@ export function H2({
   return (
     <h2
       className={cn(
-        "mb-2 scroll-m-20 border-b pb-2 font-semibold text-3xl tracking-tight first:mt-0",
+        "my-4 scroll-m-20 border-b pb-2 font-semibold text-3xl tracking-tight first:mt-0",
         className
       )}
       {...props}
