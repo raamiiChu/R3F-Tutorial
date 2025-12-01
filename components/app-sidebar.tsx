@@ -26,10 +26,10 @@ export function AppSidebar() {
               <SidebarGroupLabel>{groupLabel}</SidebarGroupLabel>
               <SidebarGroupContent>
                 <SidebarMenu>
-                  {menus.map(({ title, url, Icon }) => (
-                    <SidebarMenuItem key={title}>
+                  {menus.map(({ title, url, Icon, isBlank }) => (
+                    <SidebarMenuItem key={title} title={title}>
                       <SidebarMenuButton asChild>
-                        <a href={url}>
+                        <a href={url} target={isBlank ? "_blank" : "_self"}>
                           <Icon />
                           <span>{title}</span>
                         </a>
