@@ -2,7 +2,10 @@ import { H1 } from "@/components/typography";
 import {
   CameraIntroduction,
   CoordinateSystem,
+  LightsIntroduction,
+  MeshIntroduction,
   SceneIntroduction,
+  Showcase,
 } from "./_components";
 
 const Foundation = () => {
@@ -12,6 +15,9 @@ const Foundation = () => {
       <CoordinateSystem />
       <SceneIntroduction />
       <CameraIntroduction />
+      <MeshIntroduction />
+      <LightsIntroduction />
+      <Showcase />
     </>
   );
 };
