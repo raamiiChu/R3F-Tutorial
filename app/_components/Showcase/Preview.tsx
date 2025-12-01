@@ -4,6 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import type * as THREE from "three";
+import CanvasWrapper from "@/components/canvas-wrapper";
 
 const RotatingBox = () => {
   const ref = useRef<THREE.Mesh>(null);
@@ -29,16 +30,7 @@ const RotatingBox = () => {
 
 const Preview = () => {
   return (
-    <div
-      style={{
-        height: "30dvh",
-        maxWidth: "100%",
-        width: "50dvw",
-        margin: "0 auto",
-        borderRadius: "10px",
-        backgroundColor: "var(--muted)",
-      }}
-    >
+    <CanvasWrapper>
       {/* scene */}
       <Canvas camera={{ position: [3, 3, 3], fov: 60 }}>
         {/* lights */}
@@ -50,7 +42,7 @@ const Preview = () => {
 
         <RotatingBox />
       </Canvas>
-    </div>
+    </CanvasWrapper>
   );
 };
 
