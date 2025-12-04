@@ -12,12 +12,14 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { sidebarItems } from "@/constants";
+import { GithubButton } from "./github-button";
 
 export function AppSidebar() {
   return (
     <Sidebar>
-      <SidebarHeader>
+      <SidebarHeader className="flex flex-row justify-between">
         <ModeToggle />
+        <GithubButton />
       </SidebarHeader>
       <SidebarContent>
         {sidebarItems.map(({ groupLabel, menus }) => {
