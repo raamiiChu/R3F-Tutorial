@@ -35,7 +35,7 @@ const CameraIntroduction = () => {
 
       <figure className="relative mx-auto mt-4 aspect-video w-full bg-white sm:w-2/3">
         <Image
-          src="/foundation/perspective-and-orthographic-cameras.png"
+          src="/foundation/Perspective-and-Orthographic-Cameras.png"
           alt="Perspective and Orthographic Cameras"
           fill
           className="object-contain px-4"
