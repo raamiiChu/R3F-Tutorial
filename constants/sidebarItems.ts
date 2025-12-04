@@ -77,11 +77,11 @@ const sidebarItems: SideBarItem[] = [
         url: "/textures",
         Icon: Wallpaper,
       },
-      {
-        title: "Audio",
-        url: "/audio",
-        Icon: Headphones,
-      },
+      // {
+      //   title: "Audio",
+      //   url: "/audio",
+      //   Icon: Headphones,
+      // },
     ],
   },
   {
