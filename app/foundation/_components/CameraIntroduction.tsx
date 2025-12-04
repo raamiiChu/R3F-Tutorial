@@ -33,7 +33,7 @@ const CameraIntroduction = () => {
         </li>
       </List>
 
-      <figure className="relative mx-auto mt-4 aspect-video w-full bg-white sm:w-2/3">
+      <figure className="relative mx-auto my-4 aspect-video w-full bg-white sm:w-2/3">
         <Image
           src="/foundation/Perspective-and-Orthographic-Cameras.png"
           alt="Perspective and Orthographic Cameras"

@@ -27,7 +27,7 @@ function CoordinateSystem() {
         <li>z: depth (positive is out towards the viewer)</li>
       </List>
 
-      <figure className="relative mx-auto aspect-video w-full bg-white sm:w-2/3">
+      <figure className="relative mx-auto mb-4 aspect-video w-full bg-white sm:w-2/3">
         <Image
           src="/foundation/Right-and-Left-Handed-Coordinate-systems.png"
           alt="Right and Left Handed Coordinate systems"
