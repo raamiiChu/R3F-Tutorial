@@ -44,17 +44,17 @@ const sidebarItems: SideBarItem[] = [
     menus: [
       {
         title: "Camera Control (drei)",
-        url: "#",
+        url: "/drei",
         Icon: Camera,
       },
       {
-        title: "GUI (leva)",
-        url: "#",
+        title: "GUI Tools (leva)",
+        url: "/leva",
         Icon: SearchCheck,
       },
       {
         title: "GLTF to R3F",
-        url: "#",
+        url: "/gltf-to-r3f",
         Icon: FileCheckCorner,
       },
     ],
@@ -64,22 +64,22 @@ const sidebarItems: SideBarItem[] = [
     menus: [
       {
         title: "Animations (useFrame)",
-        url: "#",
+        url: "/animations",
         Icon: Play,
       },
       {
         title: "Shadows",
-        url: "#",
+        url: "/shadows",
         Icon: Blend,
       },
       {
         title: "Textures",
-        url: "#",
+        url: "/textures",
         Icon: Wallpaper,
       },
       {
         title: "Audio",
-        url: "#",
+        url: "/audio",
         Icon: Headphones,
       },
     ],
@@ -107,7 +107,7 @@ const sidebarItems: SideBarItem[] = [
       },
       {
         title: "Leva Docs",
-        url: "https://leva.pmnd.rs/",
+        url: "https://github.com/pmndrs/leva",
         Icon: Book,
         isBlank: true,
       },

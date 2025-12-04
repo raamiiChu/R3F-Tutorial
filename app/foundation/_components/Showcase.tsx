@@ -1,6 +1,6 @@
-import { AlertCircleIcon, CheckCircle2Icon, PopcornIcon } from "lucide-react";
-import { H2, InlineCode } from "@/components/typography";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AlertCircleIcon } from "lucide-react";
+import { H2 } from "@/components/typography";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CodeBlock } from "@/components/ui/code-block";
 import ShowPreview from "./ShowPreview";
 
@@ -27,6 +27,7 @@ const Showcase = () => {
   return (
     <article>
       <H2>Showcase</H2>
+      <ShowPreview />
 
       <Alert variant="destructive">
         <AlertCircleIcon className="m-auto" />
@@ -40,7 +41,6 @@ const Showcase = () => {
       </Alert>
 
       <CodeBlock language="tsx" filename="showcase.tsx" code={codeShowcase} />
-      <ShowPreview />
     </article>
   );
 };
