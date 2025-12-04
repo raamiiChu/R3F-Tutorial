@@ -22,6 +22,9 @@
       "suspicious": {
         "noUnknownAtRules": "off"
       },
+      "a11y": {
+        "noStaticElementInteractions": "off"
+      },
       "nursery": {
         "useSortedClasses": {
           "level": "warn",
