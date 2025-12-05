@@ -14,7 +14,7 @@ Title: Microphone GXL 066 Bafhcteks
 */
 function Model(props) {
   const { nodes, materials } = useGLTF(
-    "/models/microphone_gxl_066_bafhcteks.glb",
+    "/models/microphone.glb",
   );
   return (
     <group {...props} dispose={null}>
@@ -128,19 +128,19 @@ function Model(props) {
   );
 }
 
-useGLTF.preload("/microphone_gxl_066_bafhcteks.glb");
+useGLTF.preload("/models/microphone.glb");
 
 const ShowcaseOnlineTool = () => {
   return (
     <CanvasWrapper>
-      <Canvas>
+      <Canvas camera={{ position: [0, 0, 2] }}>
         <ambientLight />
         <directionalLight position={[0, 0, 2]} intensity={20} />
         <directionalLight position={[0, 0, -2]} intensity={10} />
 
         <Model />
 
-        <OrbitControls />
+        <OrbitControls enablePan={false} />
       </Canvas>
     </CanvasWrapper>
   );
